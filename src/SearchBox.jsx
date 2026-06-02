@@ -6,7 +6,7 @@ export default function SearchBox({ updateInfo }) {
   const [city, setCity] = useState("");
   const [error, setError] = useState("");
 
-  const API_KEY = "76ddf9abeb8240f889a101531260206";
+  const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
   const getWeatherInfo = async () => {
     try {
